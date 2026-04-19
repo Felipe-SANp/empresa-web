@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMARTPARK - Nosotros</title>
+  <title>SMARTPARK - Contacto</title>
   
-  <!-- estilos css PicoCss -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   >
-  <!-- estilos personalizados -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container">
@@ -19,22 +17,47 @@
     <p><small>Estacionamiento Inteligente</small></p>
     <nav aria-label="Menú principal">
       <ul>
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Contenido de la página de nosotros -->
-  </main>
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas sobre nuestro sistema de estacionamiento inteligente? Comunícate con nosotros.</p>
 
-  <footer>
-    <p>
-      <small>&copy; 2026 SMARTPARK. Todos los derechos reservados.</small>
-    </p>
-  </footer>
-</body>
-</html>
+    <div class="grid">
+      
+      <article>
+        <header>
+          <h3>Nuestros Datos</h3>
+        </header>
+        <ul>
+          <li><strong>📞 Teléfono:</strong> <br> <a href="tel:+529851234567">+52 (999) 999-9999</a></li>
+          <br>
+          <li><strong>✉️ Correo:</strong> <br> <a href="mailto:info@smartpark.com">info@smartpark.com</a></li>
+          <br>
+          <li><strong>📍 Dirección:</strong> <br> Valladolid, Yucatán, México.</li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <h3>Envíanos un mensaje</h3>
+        </header>
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+
+    </div>
+  </main>
