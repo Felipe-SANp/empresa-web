@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMARTPARK - Servicios</title>
-  
-  <!-- estilos css PicoCss -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-  >
-  <!-- estilos personalizados -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los servicios de SMARTPARK: gestión inteligente, analítica avanzada e integración de pagos para estacionamientos modernos.">
+    <title>Servicios - SMARTPARK</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container">
-  <header>
-    <h1>SMARTPARK</h1>
-    <p><small>Estacionamiento Inteligente</small></p>
-    <nav aria-label="Menú principal">
-      <ul>
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>SMARTPARK</strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <!-- Contenido de la página de servicios -->  
-    <section aria-labelledby="titulo-servicios">
-        <h2 id="titulo-servicios">¿Qué ofrecemos?</h2>
-        <p>En SMARTPARK ofrecemos soluciones integrales diseñadas para transformar la gestión de estacionamientos mediante el uso de tecnología avanzada. Nuestro objetivo es optimizar la operatividad y mejorar la experiencia del usuario final.</p>
-    </section>
+    <main class="container">
+        <section id="servicios-principales">
+            <h2>Nuestros Servicios Especializados</h2>
+            <p>Soluciones tecnológicas diseñadas para optimizar la movilidad urbana y la rentabilidad de tus espacios.</p>
+            
+            <div class="grid">
+                <article>
+                    <header>💳 Integración con Pagos</header>
+                    <p>Implementamos sistemas de cobro digital mediante códigos QR y aplicaciones móviles, reduciendo tiempos de espera y eliminando el uso de efectivo físico.</p>
+                </article>
 
-    <section aria-labelledby="servicios-principales">
-        <h3 id="servicios-principales">Nuestras soluciones tecnológicas</h3>
-        <article>
-            <h4>Sensores de Ocupación</h4>
-            <p>Implementación de hardware de última generación para el monitoreo en tiempo real de cada espacio disponible, garantizando datos precisos al instante.</p>
-        </article>
+                <article>
+                    <header>📊 Analítica de Datos</header>
+                    <p>Accede a tableros de control con información en tiempo real sobre flujo vehicular, horas de mayor demanda y proyecciones de ingresos mensuales.</p>
+                </article>
+            </div>
+        </section>
 
-        <article>
-            <h4>Plataforma de Gestión</h4>
-            <p>Software administrativo centralizado que permite el análisis de datos, control de ingresos y generación de reportes detallados para la toma de decisiones.</p>
-        </article>
-    </section>
+        <section id="testimonios">
+            <hr>
+            <h3>Casos de Éxito</h3>
+            <blockquote>
+                "La implementación de la analítica de SMARTPARK nos permitió identificar que el 20% de nuestros espacios estaban subutilizados. Ahora operamos al 95% de capacidad."
+                <footer>
+                    <cite>— Director de Operaciones, Plaza Magna</cite>
+                </footer>
+            </blockquote>
 
-    <section aria-labelledby="beneficios">
-        <h3 id="beneficios">Beneficios del servicio</h3>
-        <ul>
-            <li><strong>Monitoreo 24/7:</strong> Vigilancia técnica constante para asegurar la disponibilidad del sistema.</li>
-            <li><strong>Interfaz intuitiva:</strong> Aplicaciones móviles y web fáciles de usar para administradores y conductores.</li>
-            <li><strong>Escalabilidad:</strong> Soluciones que crecen al ritmo de tu proyecto, desde pequeños lotes hasta redes urbanas.</li>
-            <li><strong>Soporte especializado:</strong> Equipo técnico dedicado a resolver cualquier incidencia de forma inmediata.</li>
-        </ul>
-    </section>
+            <article>
+                <h4>Caso de Uso: Residencial Arboledas</h4>
+                <p>Se integró el sistema de pagos digitales para visitas, logrando una gestión 100% automatizada sin necesidad de personal en sitio las 24 horas.</p>
+            </article>
+        </section>
+    </main>
 
-    <section aria-labelledby="llamado-accion">
-        <p>¿Listo para modernizar tu espacio? Explora cómo nuestras soluciones pueden ayudarte o solicita una demostración personalizada en nuestra sección de 
-        <a href="contacto.html">Contacto</a> para conversar con nosotros.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      <small>&copy; 2026 SMARTPARK. Todos los derechos reservados.</small>
-    </p>
-  </footer>
+    <footer class="container">
+        <small><p>&copy; 2024 SMARTPARK - Rubén Omar (Dev B)</p></small>
+    </footer>
 </body>
 </html>
