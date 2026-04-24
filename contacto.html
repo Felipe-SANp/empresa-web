@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SMARTPARK - Contacto</title>
   
-    <!-- estilos css PicoCss -->
-  <link
+    <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    <!-- estilos personalizados -->
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container">
   <header>
@@ -25,40 +23,95 @@
       </ul>
     </nav>
   </header>
-    <!-- Contenido de la página de contacto -->
+  
   <main>
-    <h2>Contáctanos</h2>
-    <p>¿Tienes dudas sobre nuestros servicios? Comunícate con el equipo de SMARTPARK.</p>
+    <style>
+      /* Animación de entrada fluida */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .anim-fade {
+        opacity: 0; /* Inician ocultos */
+        animation: fadeInUp 0.7s ease-out forwards;
+      }
+
+      /* Retrasos para que aparezcan en cascada */
+      .delay-1 { animation-delay: 0.2s; }
+      .delay-2 { animation-delay: 0.4s; }
+
+      /* Efecto hover interactivo para las tarjetas */
+      .tarjeta-interactiva {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .tarjeta-interactiva:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Estética de los íconos */
+      .icono-contacto {
+        font-size: 1.3em;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    </style>
+
+    <hgroup class="anim-fade">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes dudas sobre nuestros servicios? Comunícate con el equipo de SMARTPARK.</p>
+    </hgroup>
 
     <div class="grid">
-      <article>
+      <article class="tarjeta-interactiva anim-fade delay-1">
         <header>
           <h3>Nuestros Datos</h3>
         </header>
-        <ul>
-          <li><strong>📞 Teléfono:</strong> <br> <a href="tel:+529851234567">+52 (999) 999-9999</a></li>
-          <br>
-          <li><strong>✉️ Correo:</strong> <br> <a href="mailto:contacto@smartpark.com">contacto@smartpark.com</a></li>
-          <br>
-          <li><strong>📍 Dirección:</strong> <br> Valladolid, Yúcatan, México.</li>
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 1.2rem;">
+            <span class="icono-contacto">📞</span> <strong>Teléfono:</strong> <br> 
+            <a href="tel:+529999999999">+52 (999) 999-9999</a>
+          </li>
+          <li style="margin-bottom: 1.2rem;">
+            <span class="icono-contacto">✉️</span> <strong>Correo:</strong> <br> 
+            <a href="mailto:contacto@smartpark.com">contacto@smartpark.com</a>
+          </li>
+          <li>
+            <span class="icono-contacto">📍</span> <strong>Dirección:</strong> <br> 
+            Valladolid, Yucatán, México.
+          </li>
         </ul>
       </article>
 
-      <article>
+      <article class="tarjeta-interactiva anim-fade delay-2">
         <header>
           <h3>Envíanos un mensaje</h3>
         </header>
-        <form>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        <form action="#" method="POST">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+          </label>
 
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          <label>
+            Correo electrónico
+            <input type="email" name="email" placeholder="ejemplo@correo.com" required autocomplete="email">
+          </label>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="¿En qué te podemos ayudar?" rows="3" required></textarea>
+          <label>
+            Mensaje
+            <textarea name="mensaje" placeholder="¿En qué te podemos ayudar?" rows="4" required></textarea>
+          </label>
 
-          <button type="submit">Enviar Mensaje</button>
+          <button type="submit" style="transition: transform 0.2s ease;">Enviar Mensaje</button>
         </form>
       </article>
     </div>
